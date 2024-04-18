@@ -1,0 +1,490 @@
+/* digigurus */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    line-height: 1.8;
+    color: #898fa1;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #11245A;
+}
+
+.title-sm {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+img {
+    width: 350px;
+    height: 320px;
+}
+
+small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 7vh;
+    background-color: #1595e4;
+}
+
+.logo-text {
+    font-size: 22px;
+    color: #11245A !important;
+    margin-left: 50px;
+}
+
+.navbar .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #e93b3b;
+    color: #e1ff00;
+}
+
+.user {
+    font-weight: 900;
+    color: rgb(0, 255, 47);
+    font-size: large;
+}
+
+/* *************************************************************************** */
+
+/* intro */
+#shome {
+    background: linear-gradient(rgba(17, 36, 90, 0), rgba(17, 36, 90, 0)), url(../img/bg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: red;
+    font-weight: 900;
+}
+
+
+.btn {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border-radius: 25px;
+    background-color: navy;
+    color: white;
+}
+
+.btn:hover {
+    background-color: navy;
+    color: white;
+}
+
+
+.btn-brand {
+    background-color: navy;
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: navy;
+    color: #fff;
+}
+
+/* *************************************************************************** */
+
+/* OUR SERVICES */
+
+#services {
+    background: linear-gradient(rgba(17, 36, 90, 0), rgba(17, 36, 90, 0)), url(../img/bg1.jpeg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+
+.section-intro .label {
+    color: white;
+}
+
+.section-intro .hline {
+
+    width: 120px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 16px auto 0 auto;
+}
+
+
+.section-intro .hline1 {
+    width: 120px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 16px auto 0 auto;
+}
+
+.hline {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 16px auto 0 auto;
+}
+
+.hline1 {
+    width: 120px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 16px auto 0 auto;
+}
+
+.card-main-container {
+    justify-content: space-around;
+    margin: 0 5%;
+}
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    width: 350px;
+    height: 550px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 6px solid #fff;
+    position: relative;
+    margin: 3% 2%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.data {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    position: absolute;
+    left: 0;
+    background: #1f3d4740;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    color: #fff;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.2s;
+    border-radius: 15px;
+
+}
+
+.card:hover .data {
+    top: 0;
+}
+
+.card:hover {
+    border-radius: 25px;
+    border: 5px solid #2b72a1;
+}
+
+.card-title {
+
+    text-transform: uppercase;
+    font-family: "Play";
+    font-weight: 500;
+
+}
+
+.card-info {
+
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 25px;
+    margin: 30px 0;
+    font-weight: 400;
+
+}
+
+button {
+    color: var(--color);
+    transition: 0.25s;
+}
+
+button:hover,
+button:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 1em;
+}
+
+
+.raise {
+    --color: #e5ff60;
+    --hover: #3ef93b;
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+/* ***************************************************************************** */
+
+/* WORK IMAGES */
+
+.sl {
+    background: linear-gradient(rgba(17, 36, 90, 0), rgba(17, 36, 90, 0)), url(../img/bg2.jpeg);
+    /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide {
+    width: 80%;
+    margin-left: 140px;
+}
+
+.d-block {
+    height: 500px;
+}
+
+.ui {
+    margin-top: 20px;
+    height: 500px;
+}
+
+.carousel-control-prev-icon {
+    color: black;
+}
+
+
+.slide1 {
+    width: 80%;
+    margin-left: 140px;
+}
+
+.d-block {
+    height: 500px;
+}
+
+.ui {
+    margin-top: 20px;
+    height: 500px;
+}
+
+/* ***************************************************************************** */
+
+/* Feature */
+
+.featureall {
+    background: linear-gradient(rgba(17, 36, 90, 0), rgba(17, 36, 90, 0)), url(../img/bg1.jpeg);
+    background-size: cover;
+    color: white;
+}
+
+.feature .hline {
+    width: 120px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 16px auto 0 auto;
+}
+
+.feature .icon-box {
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+/* ******************************************************************************* */
+/* contact */
+#contact {
+    background-color: wheat;
+    background: linear-gradient(rgba(17, 36, 90, 0), rgba(17, 36, 90, 0)), url(../img/bg2.jpeg);
+    background-size: cover;
+}
+
+.cnt-img {
+    width: 350px;
+    height: 320px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px 10px navy
+}
+
+.section-cnt {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-cnt .hline {
+    width: 120px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 16px auto 0 auto;
+}
+
+/* **************************************************************************** */
+
+/* RANDOM TEXT */
+
+#cta {
+    background-color: #8c40b3;
+}
+
+/* ************************************************************************* */
+
+/* FOOTER */
+footer {
+    background-color: whitesmoke;
+}
+
+.footer-top {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: black;
+}
+
+.social-icons {
+    width: 100%;
+    height: 60px;
+    left: 0;
+    display: flex;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    color: #fff;
+    border-radius: 100px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+footer .sociali-icons a {
+    color: palevioletred;
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+}
+
+footer .sociali-icons a:hover {
+    color: rgb(154, 23, 121);
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+}
+
+footer .socialt-icons a {
+    color: rgb(49, 77, 221);
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+}
+
+footer .socialt-icons a:hover {
+    color: rgb(21, 42, 151);
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+}
+
+footer .socialf-icons a {
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+}
+
+footer .socialf-icons a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 20, 127);
+}
+
+footer .socialw-icons a {
+    color: rgb(74, 220, 91);
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+}
+
+footer .socialw-icons a:hover {
+    color: rgb(7, 69, 7);
+
+}
+
+footer .footer-links a {
+    display: block;
+    font-weight: 400;
+}
+
+footer .footer-links a {
+    color: #898fa1;
+}
+
+footer .footer-links a:hover {
+    color: #E93B81;
+}

@@ -1,0 +1,107 @@
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
+	<div class="container1">
+		<a class="navbar-brand logo-text ml-5 font-weight-bold" href="../Digigurus/index.php">DigiGurus</a>
+	</div>
+</nav>
+
+<div class="container">
+	<br>
+	<hr>
+	<div class="row justify-content-center">
+		<div class="col-md-6">
+			<div class="card">
+				<header class="card-header">
+					<a href="../Digigurus/login.php" class="float-right btn btn-outline-primary mt-1">Log in</a>
+					<h4 class="card-title mt-2">Sign up</h4>
+				</header>
+				<article class="card-body">
+					<form name="myregis" action="http://localhost/Digigurus/dreamsign.php" method="post">
+						<div class="form-row">
+							<div class="col form-group">
+								<label>First name </label>
+								<input type="text" class="form-control" placeholder="Enter First Name" name="fnm"
+									onblur="return firstr()" required>
+							</div>
+							<div class="col form-group">
+								<label>Last name</label>
+								<input type="text" class="form-control" placeholder="Enter Last Name" name="lnm"
+									onblur="return lastr()" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Username</label>
+							<input type="text" class="form-control" placeholder="Enter Username" name="uname"
+								onblur="validateUsername(document.myregis.uname)" required>
+							<small class="form-text text-muted">Username must contain only alphanumeric characters and
+								underscores.</small>
+						</div>
+						<div class="form-group">
+							<label>Email address</label>
+							<input type="email" class="form-control" placeholder="Enter Valid Email" name="emailreg"
+								onblur="return ValidateEmailr(document.myregis.emailreg)" required>
+							<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group" aria-required="true">
+							<label class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender1" value="Male">
+								<span class="form-check-label"> Male </span>
+							</label>
+							<label class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender1" value="Female">
+								<span class="form-check-label"> Female</span>
+							</label>
+							<label class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender1" value="Other">
+								<span class="form-check-label"> Other</span>
+							</label>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label>City</label>
+								<input type="text" class="form-control" placeholder="Enter City" name="cty" required>
+							</div>
+							<div class="form-group col-md-6">
+								<label>Country</label>
+								<select id="inputState" class="form-control" name="coty">
+									<option selected=""> Choose...</option>
+									<option>India</option>
+									<option>Uzbekistan</option>
+									<option>United States</option>
+									<option>Afganistan</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Create password</label>
+							<input class="form-control" type="password" placeholder="Enter Password" name="pwd">
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-block"> Register </button>
+						</div>
+						<small class=" text-danger">*By clicking the 'Sign Up' button, you confirm that you accept our
+							<br> Terms of use and Privacy Policy.</small>
+
+					</form>
+				</article>
+				<div class="border-top card-body text-center">Have an account? <a href="../Digigurus/login.php">Log
+						In</a></div>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+<script src="js/script.js"></script>
+</html>

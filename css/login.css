@@ -1,0 +1,26 @@
+.divider:after,
+.divider:before {
+   content: "";
+   flex: 1;
+   height: 1px;
+   background: #eee;
+}
+
+.navbar {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+   color: #e93b3b;
+}
+
+.logo-text {
+   font-size: 22px;
+   color: #11245A !important;
+}
